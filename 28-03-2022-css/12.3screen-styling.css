@@ -1,0 +1,44 @@
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  text-align: center;
+  border: 1px solid yellow;
+  margin: auto;
+  width: 60%
+}
+.container2{
+  width: 100%;
+}
+.header{
+  border: 1px solid black;
+  text-align: center;
+  background-color: orange;
+  padding: 15px;
+  margin: auto;
+}
+.container2 .side{
+  border: 1px solid black;
+  
+  background-color: green;
+  width: 38%;
+  height: 250px;
+  float: left;
+}
+.container2 .main{
+  border: 1px solid black;
+  background-color: purple;
+  width: 60%;
+  height: 250px; 
+  float: right;
+}
+.footer{
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightblue;
+  margin: auto;
+  padding: 15px;
+  clear: both;
+}

@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:rgb(0, 128, 122);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.navbar-place-holder
+{
+  position: static !important;
+  width: 100%;
+  height: 40%;
+}
+.divnav
+{
+top: 0px;
+background-color: rosybrown;
+height: 85px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+position: fixed;
+}
+.divnav  ul
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  width: 40%;
+}
+.divnav ul li
+{
+  border: 1px dotted blanchedalmond;
+   display: inline-block;
+  width: 30%;
+  height: 100%;
+  cursor: pointer;
+}
+.divnav ul li a
+{
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.divnav ul li:hover
+{
+  opacity: 0.6;
+  background-color: azure;
+}
+.headers h1
+{
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer
+{
+  width: 100%;
+  margin-top: 600px;
+}
+footer h4
+{
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: x-large;
+}
+.footerlinks
+{
+  list-style: none;
+  margin-right: 41px;
+}
+.footerlinks li
+{
+  display:inline-block;
+}
+.footerlinks li a
+{
+  color: black;
+  text-decoration: none;  
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbar responsive flex box</title>
+  <style>
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .div-nav-bar{
+      width: 100%;
+      height: 40%;  
+    }
+    .div-nav-bar nav{
+      background-color: blueviolet;
+      width: 100%;
+      display: flex;
+    }
+    .div-nav-bar ul{
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .div-nav-bar ul li{
+     border: 1px dotted yellow;
+
+    }
+    .div-nav-bar ul li a{
+      text-decoration: none;
+      color: black;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="div-nav-bar">
+    <nav>
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">Anna</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</body>
+
+</html>

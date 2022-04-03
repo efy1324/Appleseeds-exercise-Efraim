@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxafter</title>
+  <style>
+
+  .box{
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+    position: relative;
+  }
+  .box::after{
+    content: " ";
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+
+  </div>
+  
+</body>
+</html>

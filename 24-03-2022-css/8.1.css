@@ -1,0 +1,85 @@
+body{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+}
+li{
+  list-style: none;
+  display: inline;
+}
+h1{
+  color: white;
+}
+button{
+  color: white;
+  border: none;
+}
+.register{
+  font-size: larger;
+  padding: 8px 28px;
+  margin: 3px;
+}
+.clear{
+  font-size: medium;
+  padding: 6px 24px;
+  margin: 3px;
+}
+.submit{
+  font-size: small;
+  padding: 4px 15px;
+  margin: 3px;
+}
+.round{
+  border-radius: 25px;
+}
+/*  */
+.ghost{
+  background: none;
+}
+
+.square:hover{
+  filter: brightness(80%);
+}
+/* color of register square */
+#flat .register{
+  background-color: green;
+}
+
+#flat .clear{
+background-color:red ;
+}
+#flat .submit{
+background-color: blue;
+}
+#round .register{
+  background-color: orange;
+}
+#round .clear{
+  background-color: yellow;
+}
+#round .submit{
+  background-color: gray;
+}
+#flatghost .register{
+  border: 2px solid green;
+}
+#flatghost .clear{
+  border: 2px solid red;
+}
+#flatghost .submit{
+  border: 2px solid blue;
+}
+#roundghost .register{
+  border: 2px solid orange;
+}
+#roundghost .clear{
+  border: 2px solid yellow;
+}
+#roundghost .submit{
+  border: 2px solid gray;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.con-box{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between ;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.box1{
+  display: flex;
+  background-color: blue;
+  height: 18%;
+  width: 10%;
+  margin-top: 10px;
+}
+.box2{
+  display: flex;
+  background-color: green;
+  height: 18%;
+  width: 10%;
+}
+.box3{
+  display: flex;
+  background-color: red;
+  height: 18%;
+  width: 10%;
+  margin-bottom: 10px;
+}

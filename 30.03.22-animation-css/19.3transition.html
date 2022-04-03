@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition</title>
+<style>
+body{
+    max-width: 600px;
+    margin: 0px;
+    border: 3px solid block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* *{
+    box-sizing: border-box;
+} */
+
+div{
+    border: 3px solid black;
+    padding: 20px 30px;
+    font-size: 25px;
+    margin: 20px 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* rotate */
+.rotate::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+.rotate:hover::after{
+    transform: rotate(0);
+}
+
+
+/* translate */
+.translate{
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.translate::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+.translate:hover{
+    color: white;
+}
+.translate:hover::after{
+    transform: translateX(100%);
+}
+
+
+/* translate-y */
+.translate-y::before{
+    content: 'yeah!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.translate-y::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: 0.5s;
+}
+.translate-y:hover::before{
+    transform: translateY(100%);
+}
+.translate-y:hover::after{
+    transform: translateY(100%);
+}
+
+
+/* scale_opacity */
+.scale_opacity::before{
+    content: 'scale & opacity';
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transform: scale(5, 5);
+    transition: 1s;
+    z-index: 1;
+}
+.scale_opacity:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+</style>
+
+
+</head>
+
+<body>
+  <div class="rotate">Rotate</div>
+  <div class="translate">Translate</div>
+  <div class="translate-y">TranslateY</div>
+  <div class="scale_opacity">Scale & opacity</div>
+
+  
+</body>
+</html>

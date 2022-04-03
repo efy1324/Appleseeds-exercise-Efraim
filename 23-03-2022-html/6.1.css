@@ -1,0 +1,23 @@
+.header1
+{
+  text-align: center;
+  color: burlywood;
+  background-color: blue;
+  font-size: large;
+  border:thin solid red;
+  border-radius: 25px;
+}
+#h2
+{
+  color: royalblue;
+  font-style: italic;
+  font-weight: bold;
+}
+#h3
+{
+  background-color: black;
+   color:white ;
+   font-family: monospace;
+
+
+}
