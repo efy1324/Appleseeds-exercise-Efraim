@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid {
+      height: 25vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns:1fr 3fr 1fr ;
+      grid-gap: 5px;
+    }
+    .i { 
+      color: white;
+      border: #ccc 1px solid;
+      border-radius: 20px;
+      height: 100%;
+      text-align: center;
+    }
+
+    .item1 {
+      background-color: red;
+      grid-column: 1 / span 3;
+    }
+
+    .item2 {
+      background-color: blue;
+       grid-row: 2 / span 2;
+    }
+
+    .item3 {
+      background-color: green;
+      grid-row: 2 / span 2;
+    }
+
+    .item4 {
+      background-color: purple;
+      grid-row: 2 / span 2;
+    }
+
+    .item5 {
+      background-color: yellow;
+      grid-column: 1 / span 3;
+    }
+    @media(max-width:768px){
+      .grid{
+        grid-template-columns:200px, 600px;
+      } .item1 {
+      background-color: red;
+      grid-column: 1 / span 2;
+    }
+    .item2 {
+      background-color: blue;
+       grid-row: 2 / span 2;
+    }
+
+    .item4 {
+      background-color: purple;
+      grid-row: 4;
+      grid-column: 1 / span 2;
+    }
+    .item5 {
+      background-color: yellow;
+      grid-column: 1 / span 2;
+      grid-row: 5;
+    }
+  }
+    @media(max-width:500px){
+      .grid{
+        grid-template-columns: repeat(1, auto);
+      } .item2 {
+      background-color: blue;
+       grid-row: 2 ;
+    }
+    .item3 {
+      background-color: green;
+      grid-row: 3 / span 2;
+    }.item4 {
+      background-color: purple;
+      grid-row: 5;
+    } .item5 {
+      background-color: yellow;
+      grid-row: 6;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="item1 i">Header</div>
+    <div class="item2 i">Sidebar</div>
+    <div class="item3 i">Content Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item4 i">Sidebar2</div>
+    <div class="item5 i">footer</div>
+  </div>
+</body>
+
+</html>
